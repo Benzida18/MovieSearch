@@ -1,0 +1,46 @@
+README - FlickFinder
+Project Overview
+FlickFinder is a Java-based desktop application that allows users to search for movies using an external API (TMDb). 
+Users can view trending movies, search by title, and access detailed movie descriptions. Additionally, the application provides functionality for users to save movies to a favourites list and a watchlist. These lists are saved in a MySQL database for persistence across sessions. 
+The application also includes a user login system, a logout feature, and a recommendations engine based on favourite and watchlist data.
+
+Key Features
+
+- User login and logout system connected to a MySQL database.
+- Search functionality using TMDb API.
+- Trending movies display.
+- View movie details.
+- Add to favourites and watchlist with persistent storage.
+- View saved favourites and watchlist.
+- Recommendations system based on user preferences.
+
+Technologies Used
+
+- Java (Swing for UI)
+- MySQL (User and movie data persistence)
+- JDBC (Database connectivity)
+- TMDb API (External movie data)
+- Spring annotations (Component tagging)
+
+Setup Instructions
+
+1. Clone the repository.
+2. Open the project in IntelliJ or any preferred Java IDE.
+3. Configure MySQL database and create necessary tables:
+   - users
+   - user_favorites
+   - user_watchlist
+4. Update database credentials in the `DatabaseConnection` class.
+5. Run the application from the `Main` class.
+
+API Configuration
+
+The application uses TMDb API. Ensure you have a valid TMDb API token and it's set correctly in `MovieService.java`.
+
+Future Work
+
+- Improve recommendation logic with genre metadata.
+- Add UI enhancements and error handling.
+- Implement user registration and password encryption.
+- Export favourite/watchlist to CSV or PDF.
+
