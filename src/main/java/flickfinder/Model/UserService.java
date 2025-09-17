@@ -1,4 +1,4 @@
-package flickfinder.Model;
+package flickfinder.Service;
 
 import org.springframework.stereotype.Service;
 import java.io.*;
